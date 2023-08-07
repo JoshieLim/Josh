@@ -1,9 +1,6 @@
 # Projects
-* Bidder Prediction
+
 * Registration Card Recognition
-* Car Plate Detection
-* Chatbot (rasa_x)
-* FlaskApp
 ---
   
 ## Building Docker
