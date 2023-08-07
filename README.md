@@ -1,6 +1,9 @@
 # Projects
 
 * Registration Card Recognition
+
+![alt text](https://github.com/JoshieLim/Registration-Card-Recognition/blob/master/RC-OCR-Pipeline.png?raw=true)
+
 ---
   
 ## Building Docker
