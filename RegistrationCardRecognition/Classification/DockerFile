@@ -1,0 +1,10 @@
+FROM python:3.7-slim
+COPY ["./classification/*", "./RegistrationCardRecognition/Classification/classification/"]
+WORKDIR /RegistrationCardRecognition/Classification/classification
+RUN pip install --no-cache-dir -r requirements.txt
+
+FROM nvidia/cuda:10.0-cudnn7-runtime
+COPY --from=0 . .
+WORKDIR /RegistrationCardRecognition/Classification/classification
+
+CMD []

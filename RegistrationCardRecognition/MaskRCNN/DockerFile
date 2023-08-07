@@ -1,0 +1,12 @@
+FROM python:3.7-slim
+COPY ["./maskrcnn/*", "/RegistrationCardRecognition/MaskRCNN/maskrcnn/"]
+COPY ["./Mask_RCNN/", "/RegistrationCardRecognition/MaskRCNN/Mask_RCNN/"]
+WORKDIR /RegistrationCardRecognition/MaskRCNN/Mask_RCNN
+RUN python setup.py install
+WORKDIR /RegistrationCardRecognition/MaskRCNN/maskrcnn
+RUN apt-get update && apt-get install libgtk2.0-dev -y
+RUN pip install --no-cache-dir -r requirements.txt
+
+FROM nvidia/cuda:10.0-cudnn7-runtime
+COPY --from=0 . .
+CMD []

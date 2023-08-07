@@ -1,0 +1,10 @@
+FROM python:3.7-slim
+COPY ["./craft/*", "/RegistrationCardRecognition/CRAFT/craft/"] 
+WORKDIR /RegistrationCardRecognition/CRAFT/craft/
+RUN apt-get update && apt-get install libgtk2.0-dev -y
+RUN pip install --no-cache-dir -r requirements.txt 
+
+FROM nvidia/cuda:10.0-cudnn7-runtime 
+COPY --from=0 . .
+WORKDIR /RegistrationCardRecognition/CRAFT/craft/
+CMD []
