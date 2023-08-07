@@ -2,7 +2,7 @@
 
 * Registration Card Recognition
 
-![alt text](https://github.com/JoshieLim/Registration-Card-Recognition/blob/master/RC-OCR-Pipeline.png?raw=true)
+![RC-OCR-Pipeline](https://github.com/JoshieLim/Registration-Card-Recognition/assets/54689299/4db9d9cb-8511-46b4-ade5-2eb767396ab3)
 ---
   
 ## Building Docker
