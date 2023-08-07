@@ -2,7 +2,7 @@
 
 * Registration Card Recognition
 
-![alt text](https://github.com/JoshieLim/Registration-Card-Recognition/blob/master/RC-OCR-Pipeline.png?raw=true)
+![alt text]([https://github.com/JoshieLim/Registration-Card-Recognition/blob/master/RC-OCR-Pipeline.png?raw=true](https://github.com/JoshieLim/Registration-Card-Recognition/blob/master/RegistrationCardRecognition/RC-OCR-Pipeline.png))
 
 ---
   
